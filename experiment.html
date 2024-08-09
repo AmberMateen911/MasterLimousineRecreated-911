@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <head>
+        <title>Responsive Div</title>
+        <style>
+            .image-wrapper {
+                width: 500px;
+                /* Example width */
+                height: 300px;
+                /* Example height */
+                overflow: hidden;
+                position: relative;
+            }
+
+            .container {
+                margin: 0;
+                padding: 0;
+                max-width: 1200px;
+                width: 100%;
+                background-color: #000;
+            }
+
+            .inner-container {
+                max-width: 1000px;
+            }
+
+            body {
+                background-color: #99daffb4;
+            }
+
+            .wrapper {
+                display: flex;
+                justify-content: flex-end;
+                padding: 20px;
+                height: 100vh;
+                /* Adjust as necessary */
+                box-sizing: border-box;
+            }
+
+            .content-box {
+                border: 1px solid #ccc;
+                padding: 10px;
+                margin: 0 10px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                background-color: #f9f9f9;
+                display: flex;
+                flex-direction: column;
+                /* Align children vertically */
+            }
+
+            .inner-box {
+                padding: 20px;
+                margin: 10px 0;
+                /* Vertical spacing between child divs */
+            }
+
+            .inner-box:first-child {
+                background-color: #ff9999;
+                /* Red */
+            }
+
+            .inner-box:nth-child(2) {
+                background-color: #99ccff;
+                /* Blue */
+            }
+
+            .inner-box:last-child {
+                background-color: #99ff99;
+                /* Green */
+            }
+
+            .form-container {
+                max-width: 400px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .form-field {
+                position: relative;
+                margin-bottom: 20px;
+            }
+
+            .form-field input,
+            .form-field textarea {
+                width: 100%;
+                padding: 10px 5px;
+                border: none;
+                border-bottom: 2px solid white;
+                background-color: transparent;
+                outline: none;
+                color: #333;
+            }
+
+            .form-field textarea {
+                resize: none;
+                height: 100px;
+            }
+
+            .form-field input:focus,
+            .form-field textarea:focus {
+                border-bottom: 2px solid #000;
+            }
+
+            .form-field label {
+                position: absolute;
+                top: 10px;
+                left: 5px;
+                font-size: 14px;
+                color: #aaa;
+                transition: all 0.2s ease;
+            }
+
+            .form-field input:focus+label,
+            .form-field textarea:focus+label,
+            .form-field input:not(:placeholder-shown)+label,
+            .form-field textarea:not(:placeholder-shown)+label {
+                top: -10px;
+                left: 5px;
+                font-size: 12px;
+                color: #000;
+            }
+
+            .submit-button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                background-color: #333;
+                color: #fff;
+                border: none;
+                cursor: pointer;
+                transition: background-color 0.2s ease;
+            }
+
+            .submit-button:hover {
+                background-color: #555;
+            }
+        </style>
+        /* trying to display polygones*/
+        /*.container {
+        max-width: 1300px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
+        }
+        .polygones {
+        margin-top: 30px;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-bottom: 90px;
+        }
+        .polygone {
+        width: 15px;
+        height: 10px;
+        background-color: transparent;
+        border: 2px solid #007bff;
+        padding-left: 10px;
+        transform: skewX(40deg);
+        }*/
+        </style>
+    </head>
+
+<body>
+    <div class="wrapper">
+        <div class="content-box">
+            <div class="inner-box">
+                Content 1
+            </div>
+            <div class="inner-box">
+                Content 2
+            </div>
+            <div class="inner-box">
+                Content 3
+            </div>
+        </div>
+        <div class="content-box">
+            <div class="inner-box">
+                Content 4
+            </div>
+            <div class="inner-box">
+                Content 5
+            </div>
+            <div class="inner-box">
+                Content 6
+            </div>
+        </div>
+    </div>
+    <nav style="background-color: green; margin: 10px; margin-top: 30px;">hello</nav>
+    <section style="background-color: black; color: white;">hi</section>
+    <span style="background-color: aqua;">
+        <div style="background-color: blueviolet;"> <img src="carFront.png" height="100px" width:="100px" alt=""></div>
+    </span>
+    <!-- <div class="polygones">
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+            <div class="polygone"></div>
+          </div>  -->
+    </div>
+    <header style="background-color: red;">
+        fgeyfgueyfgu
+    </header>
+    <div style="background-color: green;">
+        rgrtjyij
+    </div>
+    <br><br><br><br><br><br>
+    <a href="Indexs.html" style="color: red;">nexthfjrhgurg</a>
+    <div class="image-wrapper">
+        <img src="assets\images\home\bg-part3.png" alt="Large Image" class="responsive-image">
+    </div>
+    <style>
+        .sideline-container {
+            height: 500px;
+            width: 30px;
+            padding-top: 70px;
+        }
+
+        .sideline-container img {
+            max-height: 500px;
+        }
+    </style>
+    <div class="sideline-container">
+        <img src="assets\images\home\sideline.png" alt="">
+    </div>
+    <div class="hold">
+        <div class="heading">
+            <h1>heading to the site </h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+                Minima repudiandae nostrum necessitatibus dolorum odio, distinctio <br>
+                cupiditate quos cum veritatis temporibus recusandae expedita <br>
+                molestiae modi at voluptas facilis. Hic, excepturi exercitationem!</p>
+        </div>
+    </div>
+
+    <style>
+        .hold {
+            display: flex;
+            justify-content: center;
+        }
+
+        .heading {
+            display: block;
+        }
+    </style>
+
+</body>
+
+</html>
