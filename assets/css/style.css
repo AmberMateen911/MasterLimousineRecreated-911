@@ -136,7 +136,7 @@ body {
   background-color: rgba(165, 28, 28, 0.997);
 }
 .reserv-button:hover {
-  background-color: #914040;
+  background-color: #211e1e;
 }
 /*--------------------- HOME 4 -------------------------*/
 .inner-container {
@@ -429,7 +429,7 @@ body {
   display: flex;
   align-items: baseline;
   margin-bottom: 10px;
-  padding: 5px;
+  padding: 10px;
 }
 
 .form-field label {
@@ -443,6 +443,7 @@ body {
   border-bottom: solid 1px white;
   background: transparent;
   width: 300px;
+  outline: none;
 }
 #message {
   resize: none;

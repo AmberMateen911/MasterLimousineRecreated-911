@@ -156,16 +156,18 @@
   padding: 10px;
   }  
   /* -------------------------------About 3-------------------------*/
-/*.man-2half{
- 
-  width: 400px;
-  overflow: hidden;
-}
-.man-2half img {
-  width: 100%;
-  display: block;
- 
+.content-holder{
+  display: flex;
+  justify-content: center;
   }
+.image-container{
+    width: 100%;
+    max-width:400px ;
+  }
+.image-container img{
+  max-width: 400px;
+  }
+
 .content-container{
   text-align: right;
   padding: 40px;
