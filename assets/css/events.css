@@ -74,157 +74,126 @@ body {
 }
 /*---------------------HERO CONTENT-------------*/
 .background-image {
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 .hero-section {
-  background-image: url(../images/aboutus/background.png);
-}
-
-.inner-container {
-  display: flex;
-  justify-content: center;
+  background-image: url(../images/Events/building.png);
 }
 .hero-content {
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 400px;
-  height: 572px;
-  margin-top: 185px;
+  height: 68vh;
+  text-align: center;
 }
-#question {
+#heading {
   padding-bottom: 10px;
   font-size: 60px;
   font-family: sans-serif;
 }
-#answer {
-  text-align: center;
-}
-/* --------------about 2------------------*/
-.content-divider {
-  display: flex;
-  justify-content: flex-end;
-  height: 790px;
-}
-
-.man-1half {
-  max-width: 462px;
-  position: absolute;
-  margin-top: 200px;
-}
-.man-1half img {
-  width: 100%;
-}
-.box-holder {
-  position: relative;
-  margin-top: 50px;
-  margin-right: 150px;
-}
-.black-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 150px;
-  margin: 20px;
-  height: 150px;
-  background-color: rgb(0, 0, 0);
-  text-align: center;
-}
-.image-holder {
-  width: 100%;
-  max-width: 850px;
-}
-.image-holder img {
-  width: 850px;
-}
-.col p {
-  font-size: 42px;
-  font-family: "serif";
-  text-align: center;
-  font-style: italic;
-  padding: 10px;
-}
-.total {
+#description {
   font-size: 30px;
-  font-family: sans-serif;
+  font-style: italic;
+  font-family: Times, serif;
 }
-/* -------------------------------About 3-------------------------*/
-.man2 {
-  position: none;
-  margin-top: 0;
+/*-------------------------------------------------------------------*/
+.content-holder {
+  display: flex;
+  justify-content: space-between;
 }
-.man2 img {
-  width: 100%;
-}
-.content-container {
-  text-align: right;
-}
-.content {
-  position: relative;
-  text-align: right;
-  font-family: sans-serif;
-  padding: 70px 15px;
+.left-container{
   display: inline-block;
 }
-.content h1 {
-  font-size: 77px;
+form{
+  background-color: #222121;
+  width: 300px;
+  margin-bottom: 20px;
+}
+form input {
+  background: transparent;
+  padding: 10px;
+  width: 250px;
+  border: none;
+}
+form button{
+  background: transparent;
+  border: none;
+}
+
+.blue-container {
+  
+  background-color:#1b6d93e4 ;
+  height: 60vh;
+}
+.blue-container .heading {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  letter-spacing: 3px;
+  padding-top: 10px;
   padding-bottom: 20px;
 }
-.content p {
-  font-size: 14px;
-}
-.bottem-content {
+
+.content {
+  padding: 20px 30px;
   display: flex;
-  justify-content: center;
-  padding-top: 100px;
-  padding-bottom: 50px;
   align-items: center;
 }
-.bottem-content p {
-  position: relative;
-  font-size: 38px;
-  font-family: serif;
-  font-style: italic;
-  text-align: center;
-}
-.button-holder {
-  text-align: center;
-}
-.button-holder a {
-  background-color: rgba(167, 34, 17, 1);
-  padding: 10px 20px;
-}
-.button-holder a:hover {
-  background-color: #141111;
-}
-/* -------------------------------About 4-------------------------*/
-.water-image {
-  background-image: url(../images/aboutus/watershadow.png);
-  position: relative;
-  
-}
-.title {
-  text-align: center;
-}
-.title p {
-  font-size: 40px;
-  font-family: serif;
-  font-style: italic;
-  padding: 50px;
-}
-.options-container{
-  display: flex;
-  justify-content: center;
-
-}
-.options {
-  line-height: 4;
+.content h1 {
+  font-size: 60px;
+  width: 50px;
   font-family: sans-serif;
+}
+.blue-content p {
+  font-family: sans-serif;
+}
+.grey-container{
+  background-color: #16181A;
+  margin-top: 20px;
+  height: 70vh;
+}
+.grey-container .heading{
   text-align: center;
+  font-family: sans-serif;
+  letter-spacing: 3px;
+  padding: 10px;
+}
+.grey-content{
+  padding: 20px;
+}
+.right-container{
+  width: 700px;
+}
+.news-container {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.news-image {
+  max-width: 390px;
+  margin-bottom: 30px;
+  background-color: black;
+}
+.news-image img {
+  width: 100%;
+}
+.news-content {
+  border-left: 2px solid #A72211;
+  padding: 10px 10px;
+}
+.headline {
+  text-align: center;
+  font-size: 16px;
+  height: 55px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 30px;
+}
+.news-date {
+  text-align: right;
   padding: 30px;
+  font-size: 14px;
 }
 /*-------------FOOTER----------------------*/
 .footer {
@@ -241,9 +210,7 @@ body {
   padding: 10px;
   text-align: center;
 }
-
 /*-----------------BELOW FOOTER----------------*/
-
 .foot-cont {
   text-align: center;
   margin: 0 auto;

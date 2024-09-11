@@ -4,58 +4,59 @@
   color: white;
   text-decoration: none;
   font-size: 12px;
+  font-family: sans-serif;
 }
+
 body {
   background-color: black;
 }
+
+p {
+  font-family: sans-serif;
+  font-weight: 100;
+}
+
+.flex {
+  display: flex;
+}
+
 .container {
   width: 100%;
   max-width: 1400px;
   padding: 0;
   margin: 0 auto;
-  height: 787px;
 }
-/*------ NAVIGATION BAR------ */
+
+/*----HEADER----*/
+
 .navigation-container {
-  display: flex;
   justify-content: center;
 }
-.logo-holder {
-  width: 100%;
-  max-width: fit-content;
+
+#logo-container img {
+  max-width: 150px;
 }
+
 .navbar {
   position: absolute;
-  display: flex;
   align-items: center;
-  padding: 35px 0;
+  justify-content: space-between;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1400px;
+  padding-top: 35px;
 }
+
 .menu {
-  display: flex;
   list-style-type: none;
-  width: 100%;
-  justify-content: end;
+  gap: 10px;
 }
-.menu-items {
-  padding: 10px;
-  font-family: sans-serif;
-}
+
 .menu-items a {
-  padding: 10px;
-}
-#button {
-  background-color: rgba(165, 28, 28, 0.997);
-  padding: 10px 20px;
-}
-#button:hover {
-  background-color: #141111;
-}
-.menu .menu-items a {
+  padding: 10px 15px;
   position: relative;
 }
-.menu .menu-items:not(.button) a::after {
+
+.menu .menu-items:not(.navigation-button) a::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -67,42 +68,82 @@ body {
   transition: transform 0.3s;
 }
 
-.menu .menu-items:not(.button) a:hover::after,
-.menu .menu-items:not(.button) a.active::after {
+.menu .menu-items:not(.navigation-button) a:hover::after,
+.menu .menu-items:not(.navigation-button) a.active::after {
   transform: scaleX(0.8);
 }
 
-/*---------------------HERO CONTENT-------------*/
-.hero-section {
-  background-image: url(../images/home/backgroundImage.png);
+#navigation-button {
+  background-color: rgba(165, 28, 28, 0.997);
+  padding: 10px 20px;
+}
+
+#navigation-button:hover {
+  background-color: #141111;
+}
+
+/*----HERO CONTENT----*/
+
+.background {
   background-size: cover;
 }
+
+.hero-background {
+  background-image: url(../images/home/carfront.png);
+}
+
+.hero-container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 810px;
+}
+
 .hero-content {
   text-align: right;
-  padding: 230px 140px;
 }
-#site-name {
+
+.hero-content h1 {
   font-size: 70px;
-  font-family: league system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  line-height: 1;
-  padding-bottom: 30px;
+  font-weight: bolder;
+  line-height: 0.9;
+  padding-bottom: 20px;
 }
-/*------- HOME  2------- */
-.row {
+
+.progress {
+  width: 6%;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  height: 480px;
+}
+
+.progress img {
+  max-height: 430px;
+  vertical-align: middle;
+}
+
+/*---- SERVICE SECTION ---- */
+.service-section {
+  margin-top: 40px;
+}
+.service-row {
   display: flex;
   margin-left: 50px;
   gap: 15px;
   position: absolute;
 }
-.col {
+
+.service-col {
   max-width: 20%;
   text-align: center;
 }
-.image {
+
+.service-col img{
   width: 100%;
 }
-.title {
+
+.service-title {
   font-size: 14px;
   height: 60px;
   display: flex;
@@ -110,7 +151,31 @@ body {
   justify-content: center;
   letter-spacing: 5px;
 }
+
+.service-progress{
+  width: 6%;
+  max-width: 100px;
+  display: flex;
+  justify-content: center;
+  height: 480px;
+}
+.servive-progress img {
+  max-height: 430px;
+  vertical-align: middle;
+}
+
+/*.servive-image {
+  width: 1300px;
+  overflow: hidden;
+}*/
+
+.servive-image img{
+  width: 100%;
+  display: block;
+}
+
 /*------- HOME  3------- */
+
 .home3-cont-holder {
   margin-left: 50px;
   position: absolute;
@@ -140,7 +205,7 @@ body {
 }
 /*--------------------- HOME 4 -------------------------*/
 .inner-container {
-  width: 1400px;
+  width: 1300px;
   overflow: hidden;
 }
 .img {
@@ -158,7 +223,7 @@ body {
   width: 1300px;
 }
 .heading {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "leagues", sans-serif;
   font-size: 70px;
   line-height: 1.2;
 }
@@ -487,9 +552,9 @@ ul li a {
 }
 .foot-head {
   padding: 10px;
-
   text-align: center;
 }
+
 /*-----------------BELOW FOOTER----------------*/
 
 .foot-cont {
