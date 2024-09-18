@@ -110,7 +110,7 @@ p {
   padding-bottom: 20px;
 }
 
-.progress {
+.side-bar {
   width: 6%;
   max-width: 100px;
   display: flex;
@@ -118,7 +118,7 @@ p {
   height: 480px;
 }
 
-.progress img {
+.side-bar img {
   max-height: 430px;
   vertical-align: middle;
 }
@@ -152,17 +152,6 @@ p {
   letter-spacing: 5px;
 }
 
-.service-progress{
-  width: 6%;
-  max-width: 100px;
-  display: flex;
-  justify-content: center;
-  height: 480px;
-}
-.servive-progress img {
-  max-height: 430px;
-  vertical-align: middle;
-}
 
 /*.servive-image {
   width: 1300px;

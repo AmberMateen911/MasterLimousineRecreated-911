@@ -14,49 +14,52 @@ body {
   padding: 0;
   margin: 0 auto;
 }
-/*--------------------------------Navigation container----------------------*/
+
+/*---------------Navigation container-------------*/
+
 .navigation-container {
   display: flex;
   justify-content: center;
+  margin-top: 40px ;
 }
-.logo-holder {
-  width: 100%;
-  max-width: fit-content;
-}
-.logo-holder img {
-  width: 170px;
-}
-.navbar {
 
+#logo-holder img {
+  width: 140px;
+  vertical-align: text-top;
+}
+
+.navbar {
   display: flex;
   align-items: center;
-  padding: 35px 0;
   width: 100%;
-  max-width: 1380px;
+  max-width: 1200px;
 }
+
 .menu {
   display: flex;
   list-style-type: none;
   width: 100%;
   justify-content: end;
+  gap: 1vw;
 }
-.menu-items {
-  padding: 10px;
-  font-family: sans-serif;
-}
+
 .menu-items a {
-  padding: 10px;
+  font-family: sans-serif;
+  padding: 10px 15px;
 }
+
 #navigation-button {
   background-color: rgba(165, 28, 28, 0.997);
-  padding: 10px 20px;
 }
+
 #navigation-button:hover {
   background-color: #141111;
 }
+
 .menu .menu-items a {
   position: relative;
 }
+
 .menu .menu-items:not(.navigation-button) a::after {
   content: "";
   position: absolute;
@@ -72,7 +75,52 @@ body {
 .menu .menu-items:not(.navigation-button) a.active::after {
   transform: scaleX(0.8);
 }
+
+/* RESPONSIVE STYLES FOR SCREENS SMALLER THAN 600PX */
+
+@media (max-width: 600px) and (max-width: 767px) {
+
+  .navigation-container {
+    width: 174vw;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu {
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+  }
+
+  .menu .menu-items a {
+    font-size: 8px;
+  }
+}
+
+/*-------FOR LARGER SCREEN MORE THAN 768----------*/
+
+@media (min-width: 768px)   and (max-width: 1024px){
+  .navigation-container {
+    margin: 20px 10px 0 10px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .menu {
+    align-items: center;
+    height: 12vh;
+    gap: 0;
+  }
+
+  .menu .menu-items a {
+    font-size: 8px;
+  }
+}
+
+
 /* background setting*/
+
 .background-image {
   background-size: contain;
   background-repeat: no-repeat;
@@ -82,9 +130,12 @@ body {
   background-image: url(../images/ourfleet/fleet-banner\ 1.png);
   padding-bottom: 50px;
 }
+.inner-container{
+  display: flex;
+  align-items: center;
+}
 .content-container {
   display: inline-block;
-  margin-top: 380px;
   width: 50%;
 }
 #heading {
@@ -93,17 +144,50 @@ body {
 }
 .content-divider {
   display: flex;
-  
+padding-top: 380px;
 }
 .logo-container {
   width: 100%;
-  margin-top: 380px;
+
   text-align: center;
 }
 .logo-container img {
   max-width: 200px;
   padding: 0 40px;
 }
+
+@media (max-width: 600px) {
+ 
+  
+  .hero-section{
+    background-size: cover;
+    background-position: center;
+  }
+}
+.inner-container{
+
+}
+.content-divider{
+  padding: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*----fleet1-content----*/
 .outer-fleet{
     display: flex;
