@@ -14,65 +14,7 @@ body {
   padding: 0;
   margin: 0 auto;
 }
-/*--------------------------------Navigation container----------------------*/
-.navigation-container {
-  display: flex;
-  justify-content: center;
-}
-.logo-holder {
-  width: 100%;
-  max-width: fit-content;
-}
-.logo-holder img {
-  width: 170px;
-}
-.navbar {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  padding: 35px 0;
-  width: 100%;
-  max-width: 1380px;
-}
-.menu {
-  display: flex;
-  list-style-type: none;
-  width: 100%;
-  justify-content: end;
-}
-.menu-items {
-  padding: 10px;
-  font-family: sans-serif;
-}
-.menu-items a {
-  padding: 10px;
-  font-size: 12px;
-}
-#navigation-button {
-  background-color: rgba(165, 28, 28, 0.997);
-  padding: 10px 20px;
-}
-#navigation-button:hover {
-  background-color: #141111;
-}
-.menu .menu-items a {
-  position: relative;
-}
-.menu .menu-items:not(.navigation-button) a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1.5px;
-  background-color: #2778b3;
-  bottom: 2px;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform 0.3s;
-}
-.menu .menu-items:not(.navigation-button) a:hover::after,
-.menu .menu-items:not(.navigation-button) a.active::after {
-  transform: scaleX(0.8);
-}
+
 /*--------------------Servive --------------------*/
 .background-image {
   background-size: cover;
@@ -188,47 +130,4 @@ margin: 10px;
 .boxes:hover{
 background-color:  rgba(33, 137, 183, 1) ;
 transition:0.5s;
-}
-/*-------------FOOTER----------------------*/
-.footer {
-  background-color: rgba(34, 34, 34, 0.473);
-  display: flex;
-  text-align: left;
-  justify-content: center;
-  gap: 50px;
-  margin-top: 200px;
-}
-.footer-content {
-  padding: 20px;
-}
-ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 12px;
-}
-.foot-head {
-  padding: 10px;
-
-  text-align: center;
-}
-
-/*-----------------BELOW FOOTER----------------*/
-
-.foot-cont {
-  text-align: center;
-  margin: 0 auto;
-  display: flex;
-  margin: 20px;
-}
-.below-foot {
-  margin: 0 10px;
-}
-.pg {
-  padding-top: 30px;
-}
-.ico {
-  padding-top: 10px;
-}
-.im {
-  margin: 0 auto;
 }

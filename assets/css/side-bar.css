@@ -1,0 +1,44 @@
+.side-bar {
+  width: 6vw;
+  display: flex;
+  justify-content: end;
+  height: 500px;
+  margin-right: 32px;
+  }
+  
+  .side-bar img {
+    max-height: 450px;
+  }
+
+  
+@media screen and (max-width: 1024px) {
+  .side-bar {
+    width: 5vw;
+    display: flex;
+    justify-content: end;
+    height: 346px;
+    margin-right: 32px;
+    }   
+}
+
+@media screen and (max-width: 768px) {
+  .side-bar {
+    width: 5vw;
+    display: flex;
+    justify-content: end;
+    height: 245px;
+    margin-right: 20px;
+    }
+   
+}
+
+@media screen and (max-width: 480px) {
+  .side-bar {
+    width: 5vw;
+    display: flex;
+    justify-content: end;
+    height: 140px;
+    margin-right: 5px;
+    }
+
+}

@@ -15,68 +15,7 @@ body {
   margin: 0 auto;
 }
 
-/*---------------Navigation container-------------*/
-
-.navigation-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 40px ;
-}
-
-#logo-holder img {
-  width: 140px;
-  vertical-align: text-top;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 1200px;
-}
-
-.menu {
-  display: flex;
-  list-style-type: none;
-  width: 100%;
-  justify-content: end;
-  gap: 1vw;
-}
-
-.menu-items a {
-  font-family: sans-serif;
-  padding: 10px 15px;
-}
-
-#navigation-button {
-  background-color: rgba(165, 28, 28, 0.997);
-}
-
-#navigation-button:hover {
-  background-color: #141111;
-}
-
-.menu .menu-items a {
-  position: relative;
-}
-
-.menu .menu-items:not(.navigation-button) a::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1.5px;
-  background-color: #2778b3;
-  bottom: 2px;
-  left: 0;
-  transform: scaleX(0);
-  transition: transform 0.3s;
-}
-.menu .menu-items:not(.navigation-button) a:hover::after,
-.menu .menu-items:not(.navigation-button) a.active::after {
-  transform: scaleX(0.8);
-}
-
-/* RESPONSIVE STYLES FOR SCREENS SMALLER THAN 600PX */
+/*    NAVIGATION  RESPONSIVE STYLES FOR SCREENS SMALLER THAN 600PX */
 
 @media (max-width: 600px) and (max-width: 767px) {
 
@@ -117,8 +56,6 @@ body {
     font-size: 8px;
   }
 }
-
-
 /* background setting*/
 
 .background-image {
@@ -164,9 +101,9 @@ padding-top: 380px;
     background-position: center;
   }
 }
-.inner-container{
+/*.inner-container{
 
-}
+}*/
 .content-divider{
   padding: 0;
 }
@@ -204,6 +141,11 @@ padding-top: 380px;
     letter-spacing: 5px;
     font-size: 18px;
 }
+@media  (max-width: 768px){
+  .fleet-content p{
+    font-size: 10px;
+  }
+}
 .image-container{
     width: 100%;
 }
@@ -220,41 +162,3 @@ padding-top: 380px;
 .button-holder .button:hover{
   background-color:#141111
 }
-
-/*-------------FOOTER----------------------*/
-.footer {
-    background-color: rgba(34, 34, 34, 0.473);
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-   
-  }
-  .footer-content {
-    padding: 20px;
-  }
-  .foot-head {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  /*-----------------BELOW FOOTER----------------*/
-  
-  .foot-cont {
-    text-align: center;
-    margin: 0 auto;
-    display: flex;
-    margin: 20px;
-  }
-  .below-foot {
-    margin: 0 10px;
-  }
-  .pg {
-    padding-top: 30px;
-  }
-  .icon {
-    padding-top: 10px;
-  }
-  .footer-logo {
-    margin: 0 auto;
-  }
-  
