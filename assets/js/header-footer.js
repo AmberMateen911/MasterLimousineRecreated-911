@@ -1,4 +1,3 @@
-
 fetch('components/header.html')
     .then(response => response.text())  // Wait for the fetch to complete and convert response to text
     .then(data => {
@@ -8,6 +7,9 @@ fetch('components/header.html')
         console.error('Error fetching header:', error);
     });
 
+
+
+    
 
 
 // Load footer
