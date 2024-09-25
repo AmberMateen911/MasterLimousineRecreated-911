@@ -73,17 +73,32 @@ div #logo {
 
 /* RESPONSIVE STYLES */
 
-@media screen and (max-width: 1024px)  {
+@media screen and (max-width: 1440px){
   .navbar {
     align-items: center;
     padding-top: 20px;
     max-width: 95%;
   }
   .menu{
-    gap: 10px;
+    gap: 5px;
   }
   .menu li a{
     font-size: 10px;
+  }
+
+}
+
+@media screen and (max-width: 1024px)  {
+  .navbar {
+    align-items: center;
+    padding-top: 20px;
+    max-width: 96%;
+  }
+  .menu{
+    gap: 0px;
+  }
+  .menu li a{
+    font-size: 9px;
   }
 
   div #logo {
@@ -97,28 +112,29 @@ div #logo {
   .menu .menu-items:not(.navigation-button) a::after{
     height: 1px;
   }
+
 }
 
 @media screen and (max-width: 768px)  {
   .navbar {
     align-items: center;
     padding-top: 20px;
-    max-width: 95%;
+    max-width: 100%;
   }
   .menu{
-    gap: 0;
+    gap: 1px;
   }
   .menu li a{
     font-size: 8px;
-    padding: 10px;
+    padding: 5px;
   }
 
   div #logo {
-    max-width: 128px;
+    max-width: 100px;
   }
 
   #reservation-button {
-    padding: 8px 10px;
+    padding: 5px 8px;
     
   }
   .menu .menu-items:not(.navigation-button) a::after{
