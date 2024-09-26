@@ -47,7 +47,7 @@ p {
 
 @media screen and (max-width: 1440px) {
   .hero-content {
-    max-width: 37%;
+    max-width: 40%;
   }
 
   .hero-content h1 {
@@ -57,6 +57,12 @@ p {
   .hero-container {
     height: 790px;
   }
+
+  .hero-content p {
+    font-size: 10px;
+    padding-left: 35%;
+  }
+
 }
 
 @media screen and (max-width: 1024px) {
@@ -70,6 +76,7 @@ p {
   }
   .hero-content p {
     font-size: 10px;
+    padding-left: 25%;
   }
 
   .hero-container {
@@ -90,10 +97,10 @@ p {
 
   .hero-content p {
     font-size: 8px;
+    padding-left: 30%;
   }
   .hero-container {
-    justify-content: end;
-    height: 400px;
+    height: 450px;
   }
 }
 
@@ -200,9 +207,9 @@ p {
     left: 20px;
   }
   .service-title {
-    font-size: 6px;
+    font-size: 5px;
     height: 33px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
   }
   .service-description {
     font-size: 5px;
@@ -383,6 +390,19 @@ p {
   .fleet-background img {
     height: 80px;
   }
+  .view-link {
+    max-width: 90%; 
+    padding: 10px;
+    
+  }
+  .view-text {
+    font-size: 10px;
+    letter-spacing: 5px;
+  }
+  .greater-than {
+    font-size: 30px;
+    width: 25px;
+  }
 }
 
 
@@ -402,6 +422,19 @@ p {
   .fleet-background img {
     height: 65px;
   }
+  .view-link {
+    max-width: 90%; 
+    padding: 5px;
+    
+  }
+  .view-text {
+    font-size: 8px;
+    letter-spacing: 5px;
+  }
+  .greater-than {
+    font-size: 25px;
+    width: 25px;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -419,6 +452,19 @@ p {
 
   .fleet-background img {
     height: 45px;
+  }
+  .view-link {
+    max-width: 90%; 
+    padding: 5px;
+    
+  }
+  .view-text {
+    font-size: 6px;
+    letter-spacing: 3px;
+  }
+  .greater-than {
+    font-size: 20px;
+    width: 20px;
   }
 }
 /*--------------------- LOGO COLOECTION -------------------------*/
@@ -513,10 +559,51 @@ p {
   margin-right: 50px;
 }
 
-/*--------------------- HOME 7 -------------------------*/
-.home-7 {
-  padding-bottom: 100px;
+
+@media screen and (max-width: 426px) {
+  .content{
+    margin: 20px 0 0 20px;
+  }
+  .content .heading {
+    letter-spacing: 3px;
+  }
+  .content p{
+    max-width: 85%;
+    font-size: 5px;
+  }
+  .box-container {
+    grid-template-columns: 17% 17% 17% 17%;
+    gap: 5px;
+    margin-right: 15px;
+  } 
+  .box {
+    padding: 5px;
+    margin: 5px 0;
+    max-width: 100%;
+  }
+  .box img{
+    padding: 5px;
+    width: 10px;
+  }
+  .box-text{
+    font-size: 5px;
+  }
+
+  .box-container .inner-box:nth-child(1) {
+    margin-top: 140px;
+  }
+  .box-container .inner-box:nth-child(2) {
+    margin-top: 100px;
+  
+  }
+  .box-container .inner-box:nth-child(3) {
+    margin-top: 50px;
+  }
+  .box-container .inner-box:last-child{
+    margin-top:10px ;
+  }
 }
+/*--------------------- HISTORY 7 -------------------------*/
 
 .news-link{
   justify-content: flex-start;
@@ -554,6 +641,36 @@ p {
   text-align: right;
 }
 
+
+@media screen and (max-width: 426px){
+  
+  .news-link{
+    justify-content:space-evenly;
+    margin-top: 30px;
+  }
+  
+  .less-than {
+    width: 13%;
+    text-align: right;
+  }
+  
+  .news-content h5 {
+    font-size: 6px;
+    height: 30px;
+  }
+
+  .news-content p,   
+  .news-content a  {
+    font-size: 5px;
+  }
+
+  .content-container {
+    grid-template-columns: 25% 25% 25%;
+    height: 250px;
+    justify-content: center;
+  }
+
+}
 /*
 .sideline-container {
   height: 500px;
@@ -565,6 +682,7 @@ p {
 }*/
 
 /*------------DEATIL 8----------------*/
+
 .height{
   height: 800px;
 }
@@ -624,6 +742,45 @@ p {
   letter-spacing: 5px;
 }
 
+@media screen and (max-width: 426px){
+  .height{
+    height: 220px;
+  }
+  .grid-container{
+    grid-template-columns: 15% 15% 15% 15%;
+    gap: 5px;
+    justify-content: center;
+  }
+   
+  .box-holder {
+    padding-top: 20px;
+  }
+  
+  .black-box {
+    height: 70px;
+   
+  }
+  
+  .black-box p{
+    width: 35px;
+    font-size: 5px;
+    padding: 10px;
+  }
+  
+  .count {
+    font-size: 14px;
+    padding: 10px;
+  }
+.rectangle{
+  height: 25px;
+}
+  
+  .rectangle-content {
+    letter-spacing: 3px;
+    font-size: 5px;
+  }
+  
+}
 /*----------------CUSTOMER REVIEWS-------------------*/
 
 .review-background {
@@ -659,6 +816,8 @@ p {
   width: 73%;
   position: relative;
   right: 7px;
+  text-align: right;
+  padding: 10px;
 }
 .bottom {
   height: 5px;
@@ -683,7 +842,55 @@ p {
   font-size: 14px;
 }
 
-/*--- Gradient---*/
+@media screen and (max-width: 426px){
+  .blurbox-holder {
+    justify-content: center;
+    grid-template-columns: 26% 26% 26%;
+    gap: 5px;
+  }
+  .shape {
+    padding: 6px;
+  }
+
+  .circle {
+    width: 20px;
+    height: 20px;
+  }
+
+  .line {
+    height: 13px;
+    width: 59%;
+    right: 3px;
+    border-bottom: 1px solid;
+    padding: 0 10px;
+  }
+
+  .bottom {
+    height: 3px;
+    width: 1px;
+    margin-left: 3px;
+  }
+  
+  .bottom-align {
+    padding: 5px 0 20px 0;
+  }
+  
+  .quotation {
+    font-size: 12px;
+  }
+
+  .yellow-text{
+    font-size: 4px;
+
+  }
+  .blur-box p{
+    padding: 0 10px;
+    font-size: 5px;
+  }
+}
+
+/*--- CONTACT US---*/
+
 .height-600{
   height: 600px;
 }
@@ -716,9 +923,11 @@ p {
   font-style: italic;
 }
 
+/*FORM CONTAINER*/
+
 .form-container {
   width: 100%;
-  max-width: 410px;
+  max-width: 460px;
 }
 
 .form-field {
@@ -763,4 +972,82 @@ p {
 
 .lastline {
   padding: 0;
+}
+
+
+@media screen and (max-width: 426px){
+  .height-600{
+    height: 380px;
+  }
+  .gradient-container {
+    flex-direction: column;
+    width: 700px;
+
+    top: 50px;
+  }
+  .gradient-container {
+    width: 290px;
+    top: 40px;
+  }
+  .inner-img {
+    width: 180px;
+    height: 80px;
+  
+  }
+  .gradient-content {
+    margin-left: 20px;
+    padding: 5px;
+  }
+  .gradient-head {
+    font-size: 14px;
+  }
+  .gradient-content p{
+    font-size: 5px;
+  }
+
+  .form-container {
+    position: relative;
+    top: 70px;
+  }
+  
+  .form-field {
+    margin-bottom:5px;
+  }
+  
+  .form-field label {
+    width: 25px;
+  }
+form, label, input, textarea, button{
+    font-size: 5px;
+  }
+
+  .form-field input,
+  .form-field textarea {
+
+
+    width: 300px;
+
+  }
+  #message {
+
+    height: 50px;
+
+  }
+  .send-button {
+    width: 315px;
+  }
+  .submit-button {
+    padding: 8px 115px;
+    background-color: #267cb9;
+    border: none;
+    cursor: pointer;
+  }
+  .submit-button:hover {
+    background-color: #a52626;
+  }
+  
+  .lastline {
+    padding: 0;
+  }
+  
 }

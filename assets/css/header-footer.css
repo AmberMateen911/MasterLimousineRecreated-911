@@ -73,32 +73,31 @@ div #logo {
 
 /* RESPONSIVE STYLES */
 
-@media screen and (max-width: 1440px){
+@media screen and (max-width: 1440px) {
   .navbar {
     align-items: center;
     padding-top: 20px;
     max-width: 95%;
   }
-  .menu{
+  .menu {
     gap: 5px;
   }
-  .menu li a{
+  .menu li a {
     font-size: 10px;
   }
-
 }
 
-@media screen and (max-width: 1024px)  {
+@media screen and (max-width: 1024px) {
   .navbar {
     align-items: center;
     padding-top: 20px;
     max-width: 96%;
   }
-  .menu{
-    gap: 0px;
+  .menu {
+    gap: 3px;
   }
-  .menu li a{
-    font-size: 9px;
+  .menu li a {
+    font-size: 8px;
   }
 
   div #logo {
@@ -107,25 +106,23 @@ div #logo {
 
   #reservation-button {
     padding: 8px 10px;
-    
   }
-  .menu .menu-items:not(.navigation-button) a::after{
+  .menu .menu-items:not(.navigation-button) a::after {
     height: 1px;
   }
-
 }
 
-@media screen and (max-width: 768px)  {
+@media screen and (max-width: 768px) {
   .navbar {
     align-items: center;
     padding-top: 20px;
-    max-width: 100%;
+    max-width: 95%;
   }
-  .menu{
+  .menu {
     gap: 1px;
   }
-  .menu li a{
-    font-size: 8px;
+  .menu li a {
+    font-size: 5px;
     padding: 5px;
   }
 
@@ -135,26 +132,24 @@ div #logo {
 
   #reservation-button {
     padding: 5px 8px;
-    
   }
-  .menu .menu-items:not(.navigation-button) a::after{
+  .menu .menu-items:not(.navigation-button) a::after {
     height: 1px;
   }
 }
 
-@media screen and (max-width: 450px){
+@media screen and (max-width: 450px) {
   .navbar {
     flex-direction: column;
     padding: 10px 0;
     position: unset;
     text-align: center;
- 
   }
   .menu {
     flex-direction: column;
     gap: 2px;
   }
-  .menu li a{
+  .menu li a {
     font-size: 5px;
     padding: 5px 7px;
   }
@@ -167,7 +162,7 @@ div #logo {
     font-size: 5px;
     align-items: center;
   }
-  .menu .menu-items:not(.navigation-button) a::after{
+  .menu .menu-items:not(.navigation-button) a::after {
     height: 1px;
   }
 }
@@ -187,7 +182,40 @@ div #logo {
   padding: 10px;
   text-align: center;
 }
+.footer .footer-content #licensed {
+  height: 150px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
 
+@media screen and (max-width: 426px) {
+  .footer {
+    display: inline-grid;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    gap: 15px;
+  }
+  .footer-content h2,
+  p,
+  ul li,
+  a,
+  i {
+    font-size: 5px;
+    padding-bottom: 5px;
+  }
+  .footer-content {
+    padding-right: 4px;
+    padding: 0;
+  }
+  .foot-head {
+    padding: 20px 0;
+  }
+
+  .footer .footer-content #licensed {
+    height: 100px;
+  }
+}
 /*-----------------BELOW FOOTER----------------*/
 
 .foot-cont {
@@ -204,7 +232,28 @@ div #logo {
 }
 .icon {
   padding-top: 10px;
+  width: 5px;
 }
 .footer-logo {
   margin: 0 auto;
+}
+
+@media screen and (max-width: 426px) {
+  .foot-cont {
+    margin: 10px;
+  }
+  .below-foot {
+    margin: 0 10px;
+  }
+  .pg {
+    padding-top: 10px;
+  }
+  .icon {
+    padding-top: 10px;
+    width: 5px;
+  }
+  .footer-logo {
+    width: 80px;
+    height: 20px;
+  }
 }
