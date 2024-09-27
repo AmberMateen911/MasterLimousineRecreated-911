@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
+  font-family: sans-serif; 
+}
+
+body {
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+}
+
+.height-500{
+  height: 500px;
+}
+
+/* --QUERY FOR SCREEN SIZE 1450px-- */
+
+@media screen and (max-width: 1450px) {
+  .container {
+    max-width: 1350px;
+  }
+}
+
+/* --QUERY FOR SCREEN SIZE 1024px-- */
+
+@media screen and (max-width: 1024px) {
+  p,
+  a,
+  ul li {
+    font-size: 10px;
+  }
+  .container {
+    max-width: 950px;
+  }
+}
+
+/* --QUERY FOR SCREEN SIZE 769px-- */
+
+@media screen and (max-width: 769px) {
+    p,
+    a,
+    ul li  {
+    font-size: 8px;
+  }
+
+  .container {
+    max-width: 700px;
+  }
+}
+
+/* --QUERY FOR SCREEN SIZE 420px-- */
+
+@media screen and (max-width: 420px) {
+    p,
+    a,
+    ul li  {
+    font-size: 5px;
+  }
+  .container {
+    max-width: 300px;
+  }
+}

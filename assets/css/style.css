@@ -1,17 +1,4 @@
-p {
-  font-family: sans-serif;
-  font-weight: 100;
-}
 
-.center {
-  justify-content: center;
-}
-.container {
-  width: 100%;
-  max-width: 1300px;
-  padding: 0;
-  margin: 0 auto;
-}
 
 /*----HERO CONTENT----*/
 
@@ -23,7 +10,6 @@ p {
 .hero-background {
   background-image: url(../images/home/carfront.png);
   background-position: top center;
-  background-size: 100% 100%;
 }
 
 .hero-container {
@@ -128,14 +114,17 @@ p {
 
 /*---- SERVICE SECTION 2---- */
 
+.service-section {
+  background-image: url(../images/home/grey-car.png);
+  background-size: contain;
+}
 .service-row {
   display: grid;
   grid-template-columns: 20% 20% 20%;
   gap: 20px;
   margin-top: 50px;
-  align-items: self-start;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .service-col {
@@ -148,7 +137,6 @@ p {
 }
 
 .service-title {
-  font-size: 12px;
   height: 60px;
   display: flex;
   align-items: center;
@@ -221,15 +209,13 @@ p {
 
 /*------- EVENTS 3------- */
 
-
+/*
 .first-half-background {
   position: relative;
   top: -645px;
 }
-
+*/
 .event-content {
-  position: relative;
-  top: -1342px;
   max-width: 377px;
 }
 
@@ -332,9 +318,11 @@ p {
 
 .fleet-content {
   display: flex;
-  position: absolute;
-  max-width: 90%;
+  position: relative;
+  top: 490px;
+  max-width: 100%;
   align-items: center;
+  z-index: 5;
   justify-content: space-between;
 }
 
@@ -349,13 +337,18 @@ p {
 
 .fleet-background img {
   width: 100%;
-  height: 150px;
+  height: 470px;
+  position: relative;
+  top: 380px;
 }
 
 .image-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto;
   align-items: self-start;
+  top: 61px;
+  position: relative;
+  z-index: 4;
 }
 
 .image-container img {
