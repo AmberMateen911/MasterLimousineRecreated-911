@@ -23,6 +23,7 @@ p {
 .hero-background {
   background-image: url(../images/home/carfront.png);
   background-position: top center;
+  background-size: 100% 100%;
 }
 
 .hero-container {
@@ -133,7 +134,8 @@ p {
   gap: 20px;
   margin-top: 50px;
   align-items: self-start;
-  position: absolute;
+  position: relative;
+  z-index: 2;
 }
 
 .service-col {
@@ -159,8 +161,8 @@ p {
   padding: 0 20px;
 }
 
-.first-half-background img,
-.second-half-background img {
+.first-half-background img
+ {
   display: block; /* Remove gap between images */
   max-width: 100%;
   height: auto;
@@ -219,9 +221,15 @@ p {
 
 /*------- EVENTS 3------- */
 
+
+.first-half-background {
+  position: relative;
+  top: -645px;
+}
+
 .event-content {
-  position: absolute;
-  margin-top: 70px;
+  position: relative;
+  top: -1342px;
   max-width: 377px;
 }
 
@@ -829,6 +837,7 @@ p {
   justify-content: flex-end;
   display: flex;
   padding: 15px 0 40px 0;
+  align-items: baseline;
 }
 .quotation {
   font-size: 30px;

@@ -177,6 +177,7 @@ div #logo {
 }
 .footer-content {
   padding: 20px;
+  width: 100%;
 }
 .foot-head {
   padding: 10px;
@@ -219,8 +220,6 @@ div #logo {
 /*-----------------BELOW FOOTER----------------*/
 
 .foot-cont {
-  text-align: center;
-  margin: 0 auto;
   display: flex;
   margin: 20px;
 }
@@ -232,7 +231,7 @@ div #logo {
 }
 .icon {
   padding-top: 10px;
-  width: 5px;
+  width: 200px;
 }
 .footer-logo {
   margin: 0 auto;
