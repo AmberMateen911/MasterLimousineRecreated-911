@@ -9,10 +9,26 @@ fetch('components/header.html')
 
 
 
-    
+// ---- HIDE NAVIGATION ABR
+function toggleMenu() {
+    let screenWidth = window.innerWidth;
+    let nav_menu = document.getElementById("nav-menu");
+  
+    if (screenWidth <= 425) {
+      if (nav_menu) {
+        if (nav_menu.style.display === "none" || nav_menu.style.display === "") {
+          nav_menu.style.display = "flex"; // ----SHOW THE MENU
+        } else {
+          nav_menu.style.display = "none"; // ----HIDE THE MENU
+        }
+      } else {
+        console.error("Header element not found");
+      }
+    }
+  }
 
 
-// Load footer
+// ----- LOAD FOOTER
 fetch('components/footer.html')
     .then(response => response.text())  // Convert response to text
     .then(data => {

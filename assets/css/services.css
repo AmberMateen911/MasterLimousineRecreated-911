@@ -1,24 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-body {
-  background-color: black;
-}
-.container {
-  width: 100%;
-  max-width: 1300px;
-  padding: 0;
-  margin: 0 auto;
-}
 
 /*--------------------Servive --------------------*/
 .background-image {
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 .hero-section {
   background-image: url(../images/services/van.png);
@@ -39,6 +24,24 @@ body {
   line-height: 3;
   font-family: sans-serif;
   letter-spacing: 2px;
+}
+@media screen and (max-width: 430px){
+  .content-container {
+    padding: 20px;
+    margin-top: 15px;
+
+  }
+  #service {
+    padding-bottom: 10px;
+    font-size: 20px;
+
+  }
+  #services-type {
+    text-align: left;
+    line-height: 3;
+    letter-spacing: 2px;
+  }
+  
 }
 /*--------------------Servive 1--------------------*/
 .black-container{

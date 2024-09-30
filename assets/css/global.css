@@ -68,13 +68,14 @@ body {
 
 /* --QUERY FOR SCREEN SIZE 420px-- */
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
     p,
     a,
     ul li  {
     font-size: 5px;
   }
   .container {
-    max-width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
   }
 }

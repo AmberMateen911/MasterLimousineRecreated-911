@@ -103,10 +103,11 @@ div #logo {
 
 /* --RESPONSIVE STYLES FOR SCREEN 450px-- */
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 430px) {
+
   .navbar {
     flex-direction: column;
-    padding: 10px 0;
+    padding: 3px 0;
     position: unset;
     text-align: center;
   }
@@ -120,7 +121,7 @@ div #logo {
   }
 
   div #logo {
-    max-width: 74px;
+    cursor: pointer;
   }
   #reservation-button {
     padding: 3px 5px;

@@ -9,8 +9,6 @@
   @media screen and (max-width: 1440px){
     .side-bar {
       width: 4vw;
-      display: flex;
-      justify-content: end;
       height: 430px;
       margin-right: 25px;
       }
@@ -21,8 +19,6 @@
 @media screen and (max-width: 1024px) {
   .side-bar {
     width: 6vw;
-    display: flex;
-    justify-content: end;
     height: 340px;
     margin-right: 20px;
     }   
@@ -31,21 +27,15 @@
 @media screen and (max-width: 768px)  {
   .side-bar {
     width: 7vw;
-    display: flex;
-    justify-content: end;
     height: 225px;
     margin-right: 18px;
     }
    
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 426px) {
   .side-bar {
-    width: 5vw;
-    display: flex;
-    justify-content: end;
-    height: 120px;
-    margin-right: 5px;
-    }
+    display: none;
 
+}
 }
