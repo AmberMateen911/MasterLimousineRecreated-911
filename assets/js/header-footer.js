@@ -12,14 +12,14 @@ fetch('components/header.html')
 // ---- HIDE NAVIGATION ABR
 function toggleMenu() {
     let screenWidth = window.innerWidth;
-    let nav_menu = document.getElementById("nav-menu");
+    let menu = document.querySelector("#my-menu");
   
     if (screenWidth <= 425) {
-      if (nav_menu) {
-        if (nav_menu.style.display === "none" || nav_menu.style.display === "") {
-          nav_menu.style.display = "flex"; // ----SHOW THE MENU
+      if (menu) {
+        if (menu.style.display === "none" || menu.style.display === "") {
+          menu.style.display = "flex"; // ----SHOW THE MENU
         } else {
-          nav_menu.style.display = "none"; // ----HIDE THE MENU
+         menu.style.display = "none"; // ----HIDE THE MENU
         }
       } else {
         console.error("Header element not found");

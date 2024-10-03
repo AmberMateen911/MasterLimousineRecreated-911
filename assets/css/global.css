@@ -20,7 +20,7 @@ body {
 
 .flex-container {
   display: flex;
-  align-items: center;
+ 
 }
 
 .center {
@@ -74,8 +74,11 @@ body {
     ul li  {
     font-size: 5px;
   }
+ .heading{
+    font-size: 20px;
+  }
   .container {
-    max-width: 100%;
+    max-width: 90%;
     margin: 0 auto;
   }
 }

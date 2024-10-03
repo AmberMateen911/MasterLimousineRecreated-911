@@ -103,8 +103,12 @@ div #logo {
 
 /* --RESPONSIVE STYLES FOR SCREEN 450px-- */
 
-@media screen and (max-width: 430px) {
 
+@media screen and (max-width: 430px) {
+#my-menu{
+    display: none;
+
+}
   .navbar {
     flex-direction: column;
     padding: 3px 0;
@@ -112,8 +116,10 @@ div #logo {
     text-align: center;
   }
   .menu {
+  
     flex-direction: column;
     gap: 2px;
+
   }
   .menu li a {
     font-size: 5px;
